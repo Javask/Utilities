@@ -121,11 +121,7 @@ std::vector<std::string> splitAtSpacesWithEscape(const std::string& val) {
     substrings.push_back(val.substr(lastSpace, val.size() - lastSpace));
   }
   if (inStringDQ || inStringSQ) {
-#ifndef DISABLE_EXCEPTIONS
     throw std::invalid_argument("Open quote in string!");
-#else
-    return {};
-#endif
   }
   return substrings;
 }

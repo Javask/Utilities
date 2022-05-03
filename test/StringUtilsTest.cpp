@@ -84,7 +84,6 @@ TEST_CASE("Split strings with escape") {
                       splitAtSpacesWithEscape("\'test1 \"test1  test2\" \'"));
   REQUIRE(splits.size() == 1);
   REQUIRE(splits[0] == "\'test1 \"test1  test2\" \'");
-
   REQUIRE_THROWS(splitAtSpacesWithEscape("\'test1 \"test1\'  test2\""));
   REQUIRE_THROWS(splitAtSpacesWithEscape("\'test1 "));
   REQUIRE_THROWS(splitAtSpacesWithEscape("\"test1 "));
