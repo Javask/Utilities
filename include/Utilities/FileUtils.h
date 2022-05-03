@@ -5,6 +5,9 @@
 #include <optional>
 
 namespace Utilities {
+std::filesystem::path getExecutablePath();
+std::filesystem::path createTempDir();
+
 std::optional<std::string> readFromFile(const std::filesystem::path& filePath);
 
 std::optional<std::vector<char>> readFromFileRaw(

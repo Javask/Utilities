@@ -48,6 +48,11 @@ TEST_CASE("Split at spaces") {
   REQUIRE(splits[1] == "test2");
 }
 
+TEST_CASE("Generated Random String", "[utility]") {
+  auto str = generateRandomString(8);
+  REQUIRE(str.size() == 8);
+}
+
 TEST_CASE("Split strings with escape") {
   std::vector<std::string> splits;
   REQUIRE_NOTHROW(splits = splitAtSpacesWithEscape("test"));

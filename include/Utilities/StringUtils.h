@@ -5,6 +5,7 @@
 #include <cstddef>
 
 namespace Utilities {
+std::string generateRandomString(std::size_t len);
 
 std::vector<std::string> splitAtSpaces(const std::string& val);
 std::vector<std::string> splitAtSpacesWithEscape(const std::string& val);
