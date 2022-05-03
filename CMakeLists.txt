@@ -19,7 +19,7 @@ endif()
 
 file(GLOB_RECURSE UTILITIES_SOURCE_FILES CONFIGURE_DEPENDS "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp")
 add_library(Utilities OBJECT ${UTILITIES_SOURCE_FILES})
-set_target_properties(Utilities PROPERTIES CXX_STANDARD 20 COMPILE_OPTIONS "${CONSOLEUTILS_CXX_FLAGS}")
+set_target_properties(Utilities PROPERTIES CXX_STANDARD 20 COMPILE_OPTIONS "${UTILITIES_CXX_FLAGS}")
 
 target_include_directories(Utilities
     PUBLIC 
